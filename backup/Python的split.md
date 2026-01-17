@@ -5,6 +5,9 @@ text = "Hello    world Python"  # 注意中间有多个空格
 words = text.split()
 print(words)
 # 输出: ['Hello', 'world', 'Python']
+
+
+
 # 看到了吗？多余的空格被自动忽略了，非常智能。
 csv_data = "apple,banana,orange,grape"
 fruits = csv_data.split(',')
