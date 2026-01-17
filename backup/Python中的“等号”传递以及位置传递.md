@@ -35,8 +35,8 @@ create_user(name="Bob", age=25, role="admin") # 同样正确
     pass
 
 # 只想修改 retries，其他用默认值。如果用位置参数，必须写全 timeout 和 retries。
-# 使用关键字，直接指定，非常简洁。
-send_request("http://api.com", retries=5)
+# 使用关键字，直接指定，非常简洁。send_request("http://api.com", retries=5)
+
 </code></pre>
 <h3>4. 🚀 便于 API 扩展与维护（向后兼容）</h3>
 <p>在开发库或修改旧代码时，如果需要给函数增加新参数，使用关键字参数（特别是配合 <code>*</code> 符号）可以保证旧代码不崩溃。</p>
