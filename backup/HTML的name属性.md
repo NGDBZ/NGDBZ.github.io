@@ -68,9 +68,9 @@ let elements = document.getElementsByName("username");
 
 
 
+[!NOTE]
+那是不是意味着表单中必须要出现name
 
-<span style="color:red"># 那是不是意味着表单中必须要出现name
-</span>
 
 
 
