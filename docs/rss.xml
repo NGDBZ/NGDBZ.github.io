@@ -1,10 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Tue, 20 Jan 2026 04:52:30 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>Vue笔记</title><link>https://NGDBZ.github.io/post/Vue-bi-ji.html</link><description>&lt;img width='773' height='406' alt='Image' src='https://github.com/user-attachments/assets/6eb53a50-5d0c-43ae-a662-96d63fad3242' /&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Tue, 20 Jan 2026 04:57:01 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>Vue笔记</title><link>https://NGDBZ.github.io/post/Vue-bi-ji.html</link><description>&lt;img width='773' height='406' alt='Image' src='https://github.com/user-attachments/assets/6eb53a50-5d0c-43ae-a662-96d63fad3242' /&gt;
+
+
 components里面也是组件，但没有App.vue这个根组件厉害
 
-&lt;br&gt;
+&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;&lt;br&gt;&amp;nbsp;
 
 `import { createApp } from 'vue';`
+
 
 &lt;img width='455' height='271' alt='Image' src='https://github.com/user-attachments/assets/4ef52e04-ad5f-4c9e-bdd2-43f341391ad2' /&gt;。</description><guid isPermaLink="true">https://NGDBZ.github.io/post/Vue-bi-ji.html</guid><pubDate>Tue, 20 Jan 2026 04:01:37 +0000</pubDate></item><item><title>HTML的name属性</title><link>https://NGDBZ.github.io/post/HTML-de-name-shu-xing.html</link><description>&lt;html&gt;
 &lt;body&gt;
