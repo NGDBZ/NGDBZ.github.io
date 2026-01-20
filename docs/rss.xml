@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Tue, 20 Jan 2026 04:51:37 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>Vue笔记</title><link>https://NGDBZ.github.io/post/Vue-bi-ji.html</link><description>&lt;img width='773' height='406' alt='Image' src='https://github.com/user-attachments/assets/6eb53a50-5d0c-43ae-a662-96d63fad3242' /&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Tue, 20 Jan 2026 04:52:04 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>Vue笔记</title><link>https://NGDBZ.github.io/post/Vue-bi-ji.html</link><description>&lt;img width='773' height='406' alt='Image' src='https://github.com/user-attachments/assets/6eb53a50-5d0c-43ae-a662-96d63fad3242' /&gt;
 components里面也是组件，但没有App.vue这个根组件厉害
+
+
 
 `import { createApp } from 'vue';`
 
