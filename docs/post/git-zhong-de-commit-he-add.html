@@ -10,19 +10,13 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="<img width='1855' height='936' alt='Image' src='https://github.com/user-attachments/assets/1932625e-5a19-4b89-be08-66d9933869a7' />
-
-
-`<Person />` 确实是将原本的开始标签 `<Person>` 和结束标签 `</Person>` 合并成了一个标签。">
-<meta property="og:title" content="<Person /> 这种自闭合标签在Vue中比较流行">
-<meta property="og:description" content="<img width='1855' height='936' alt='Image' src='https://github.com/user-attachments/assets/1932625e-5a19-4b89-be08-66d9933869a7' />
-
-
-`<Person />` 确实是将原本的开始标签 `<Person>` 和结束标签 `</Person>` 合并成了一个标签。">
+<meta name="description" content="git add 的作用：把工作区的变更「移动」到暂存区，是连接工作区和版本库的必经步骤。">
+<meta property="og:title" content="git中的commit和add">
+<meta property="og:description" content="git add 的作用：把工作区的变更「移动」到暂存区，是连接工作区和版本库的必经步骤。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://NGDBZ.github.io/post/-Person%20--%20-zhe-zhong-zi-bi-he-biao-qian-zai-Vue-zhong-bi-jiao-liu-xing.html">
+<meta property="og:url" content="https://NGDBZ.github.io/post/git-zhong-de-commit-he-add.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/121368662?v=4&size=64">
-<title><Person /> 这种自闭合标签在Vue中比较流行</title>
+<title>git中的commit和add</title>
 
 
 
@@ -55,7 +49,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle"><Person /> 这种自闭合标签在Vue中比较流行</h1>
+<h1 class="postTitle">git中的commit和add</h1>
 <div class="title-right">
     <a href="https://NGDBZ.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -63,7 +57,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/NGDBZ/NGDBZ.github.io/issues/26" target="_blank" class="btn btn-invisible circle" title="Issue">
+    <a href="https://github.com/NGDBZ/NGDBZ.github.io/issues/28" target="_blank" class="btn btn-invisible circle" title="Issue">
         <svg class="octicon" width="16" height="16">
             <path id="pathIssue" fill-rule="evenodd"></path>
         </svg>
@@ -79,24 +73,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/1932625e-5a19-4b89-be08-66d9933869a7"><img width="1855" height="936" alt="Image" src="https://github.com/user-attachments/assets/1932625e-5a19-4b89-be08-66d9933869a7" style="max-width: 100%; height: auto; max-height: 936px;"></a></p>
-<p><code class="notranslate">&lt;Person /&gt;</code> 确实是将原本的开始标签 <code class="notranslate">&lt;Person&gt;</code> 和结束标签 <code class="notranslate">&lt;/Person&gt;</code> 合并成了一个标签。</p>
-<p>在 HTML 标准中，这种写法被称为<strong>自闭合标签</strong>。</p>
-<h3>为什么可以这样写？</h3>
-<p>虽然原生 HTML 里我们常见的自闭合标签只有 <code class="notranslate">&lt;img /&gt;</code>、<code class="notranslate">&lt;input /&gt;</code>、<code class="notranslate">&lt;br /&gt;</code> 等“天生就没有内容”的标签，但在 Vue（以及 React、Svelte 等前端框架）的单文件组件（SFC）中，<strong>所有自定义组件</strong>都强烈推荐使用这种自闭合形式。</p>
-<h3>这样做的好处主要有两点：</h3>
-<ol>
-<li>
-<p><strong>语义更清晰（强调组件）</strong><br>
-当你看到 <code class="notranslate">&lt;Person /&gt;</code> 时，一眼就能认出这是一个<strong>组件</strong>，而不是原生的 <code class="notranslate">&lt;div&gt;</code> 或 <code class="notranslate">&lt;p&gt;</code> 标签。如果写成 <code class="notranslate">&lt;Person&gt;&lt;/Person&gt;</code>，它看起来太像普通的 HTML 容器了。</p>
-</li>
-<li>
-<p><strong>防止意外的“包裹”行为</strong><br>
-在 Vue 中，有些组件可能并不打算包裹其他内容（即没有 <code class="notranslate">&lt;slot&gt;</code>），使用自闭合标签在视觉上更安全，避免你误以为可以在里面放东西。</p>
-</li>
-</ol>
-<p><strong>总结：</strong><br>
-它和 <code class="notranslate">&lt;Person&gt;&lt;/Person&gt;</code> 在功能上是完全等价的，但 <code class="notranslate">&lt;Person /&gt;</code> 是 Vue 生态中更标准、更现代的写法。</p></div>
+<div class="markdown-body" id="postBody"><p>git add 的作用：把工作区的变更「移动」到暂存区，是连接工作区和版本库的必经步骤。<br>
+git commit 的核心规则：只提交暂存区的内容，没有 git add 就没有可提交的内容（除非用 -a 参数）。<br>
+git commit -a 融合</p></div>
 <div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
