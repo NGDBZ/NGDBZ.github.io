@@ -105,4 +105,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 100);
     }
+
+    function replacePoweredBy() {
+        const footer2 = document.getElementById('footer2');
+        if (!footer2) return;
+
+        const spans = footer2.querySelectorAll('span');
+        for (const sp of spans) {
+            if (sp.textContent && sp.textContent.includes('Powered by')) {
+                sp.innerHTML = "Powered by <a href='https://NGDBZ.github.io' target='_blank'>NGDBZ</a>";
+                return;
+            }
+        }
+
+        if (footer2.textContent && footer2.textContent.includes('Powered by')) {
+            footer2.innerHTML = footer2.innerHTML.replace(
+                /Powered by[\s\S]*/,
+                "Powered by <a href='https://NGDBZ.github.io' target='_blank'>NGDBZ</a>"
+            );
+        }
+    }
+
+    replacePoweredBy();
 });
