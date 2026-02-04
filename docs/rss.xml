@@ -1,5 +1,62 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Fri, 23 Jan 2026 08:26:34 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>VUE3 挂载 = 组件从代码变成真实网页并出现在屏幕上的那一刻。</title><link>https://NGDBZ.github.io/post/VUE3%20-gua-zai-%20%3D%20-zu-jian-cong-dai-ma-bian-cheng-zhen-shi-wang-ye-bing-chu-xian-zai-ping-mu-shang-de-na-yi-ke-%E3%80%82.html</link><guid isPermaLink="true">https://NGDBZ.github.io/post/VUE3%20-gua-zai-%20%3D%20-zu-jian-cong-dai-ma-bian-cheng-zhen-shi-wang-ye-bing-chu-xian-zai-ping-mu-shang-de-na-yi-ke-%E3%80%82.html</guid><pubDate>Fri, 23 Jan 2026 08:26:06 +0000</pubDate></item><item><title>git中的commit和add</title><link>https://NGDBZ.github.io/post/git-zhong-de-commit-he-add.html</link><description>git add 的作用：把工作区的变更「移动」到暂存区，是连接工作区和版本库的必经步骤。</description><guid isPermaLink="true">https://NGDBZ.github.io/post/git-zhong-de-commit-he-add.html</guid><pubDate>Fri, 23 Jan 2026 02:46:52 +0000</pubDate></item><item><title>git中的Commit和Sync</title><link>https://NGDBZ.github.io/post/git-zhong-de-Commit-he-Sync.html</link><description>点击sync changes 后&lt;img width='522' height='161' alt='Image' src='https://github.com/user-attachments/assets/53c019ce-8ba1-4248-92a6-2f8836b5a907' /&gt; 
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Wed, 04 Feb 2026 02:07:42 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>scp服务器上传</title><link>https://NGDBZ.github.io/post/scp-fu-wu-qi-shang-chuan.html</link><description>
+
+## 正确命令：
+```bash
+# 从本地 上传到 远程
+scp /home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip admin@192.168.0.173:/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/
+```
+
+## 详细说明：
+- **本地文件**：`/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip`
+- **远程目标**：`admin@192.168.0.173:/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/`
+
+## 完整命令：
+```bash
+scp '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+```
+
+## 其他有用参数：
+```bash
+# 1. 显示进度
+scp -v '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+
+# 2. 使用特定端口（如果不是默认22）
+scp -P 2222 '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+
+# 3. 压缩传输（对大文件有用）
+scp -C '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+
+# 4. 保持文件属性
+scp -p '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+```
+
+## 执行步骤：
+```bash
+# 1. 先测试连接
+ssh admin@192.168.0.173 'ls -la /share/Task_Server/0021BabyBodyAge/'
+
+# 2. 上传文件
+scp '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+
+# 3. 验证上传
+ssh admin@192.168.0.173 'ls -la /share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+```
+
+## 如果文件名有特殊字符：
+```bash
+# 使用引号包裹路径
+scp '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' \
+    admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+```
+
+## 如果文件很大，可以先用 rsync（支持断点续传）：
+```bash
+rsync -avzP '/home/ldb/下载/crawlersys/downloaded_images/gettyimages#20260203#人床_1.zip' \
+    admin@192.168.0.173:'/share/Task_Server/0021BabyBodyAge/Class0026#AdultTopView/00RawData/'
+```
+
+请运行这个正确的命令。</description><guid isPermaLink="true">https://NGDBZ.github.io/post/scp-fu-wu-qi-shang-chuan.html</guid><pubDate>Wed, 04 Feb 2026 02:07:19 +0000</pubDate></item><item><title>VUE3 挂载 = 组件从代码变成真实网页并出现在屏幕上的那一刻。</title><link>https://NGDBZ.github.io/post/VUE3%20-gua-zai-%20%3D%20-zu-jian-cong-dai-ma-bian-cheng-zhen-shi-wang-ye-bing-chu-xian-zai-ping-mu-shang-de-na-yi-ke-%E3%80%82.html</link><guid isPermaLink="true">https://NGDBZ.github.io/post/VUE3%20-gua-zai-%20%3D%20-zu-jian-cong-dai-ma-bian-cheng-zhen-shi-wang-ye-bing-chu-xian-zai-ping-mu-shang-de-na-yi-ke-%E3%80%82.html</guid><pubDate>Fri, 23 Jan 2026 08:26:06 +0000</pubDate></item><item><title>git中的commit和add</title><link>https://NGDBZ.github.io/post/git-zhong-de-commit-he-add.html</link><description>git add 的作用：把工作区的变更「移动」到暂存区，是连接工作区和版本库的必经步骤。</description><guid isPermaLink="true">https://NGDBZ.github.io/post/git-zhong-de-commit-he-add.html</guid><pubDate>Fri, 23 Jan 2026 02:46:52 +0000</pubDate></item><item><title>git中的Commit和Sync</title><link>https://NGDBZ.github.io/post/git-zhong-de-Commit-he-Sync.html</link><description>点击sync changes 后&lt;img width='522' height='161' alt='Image' src='https://github.com/user-attachments/assets/53c019ce-8ba1-4248-92a6-2f8836b5a907' /&gt; 
 
 
 
