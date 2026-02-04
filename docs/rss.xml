@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Wed, 04 Feb 2026 02:07:42 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>scp服务器上传</title><link>https://NGDBZ.github.io/post/scp-fu-wu-qi-shang-chuan.html</link><description>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>极简技术博客</title><link>https://NGDBZ.github.io</link><description>随意贴些代码及思维碎片</description><copyright>极简技术博客</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://avatars.githubusercontent.com/u/121368662?v=4&amp;size=64</url><title>avatar</title><link>https://NGDBZ.github.io</link></image><lastBuildDate>Wed, 04 Feb 2026 02:45:25 +0000</lastBuildDate><managingEditor>极简技术博客</managingEditor><ttl>60</ttl><webMaster>极简技术博客</webMaster><item><title>工作注意</title><link>https://NGDBZ.github.io/post/gong-zuo-zhu-yi.html</link><description>![Image](https://github.com/user-attachments/assets/a46bb455-13cb-4e74-8bec-ec5ff23b70fe)
+每次完成任务后，再评论里加上数据统计，每个平台采集了多少数据，用的关键词是哪些
+
+
+数据彻底上传完服务器之前，不要点完成任务，容易误导别人数据已经采集完成了
+
+
+服务器不要出现中文。</description><guid isPermaLink="true">https://NGDBZ.github.io/post/gong-zuo-zhu-yi.html</guid><pubDate>Wed, 04 Feb 2026 02:44:59 +0000</pubDate></item><item><title>scp服务器上传</title><link>https://NGDBZ.github.io/post/scp-fu-wu-qi-shang-chuan.html</link><description>
 
 ## 正确命令：
 ```bash
