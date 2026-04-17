@@ -77,7 +77,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d6e83689-b639-4ad7-9f0c-8e9155632086"><img width="908" height="681" alt="Image" src="https://github.com/user-attachments/assets/d6e83689-b639-4ad7-9f0c-8e9155632086" style="max-width: 100%; height: auto; max-height: 681px;"></a></p>
+<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d6e83689-b639-4ad7-9f0c-8e9155632086"><img width="908" height="681" alt="Image" src="https://github.com/user-attachments/assets/d6e83689-b639-4ad7-9f0c-8e9155632086" style="max-width: 100%; height: auto; max-height: 681px;; aspect-ratio: 908 / 681; background-color: var(--bgColor-muted); border-radius: 6px; display: block" class="js-gh-image-fallback"></a></p>
 ###如果不写这行代码，会有什么后果？
 后果：card_key 只是一个函数内部的局部变量。函数（__init__）运行完后，这个变量就会消失，你的线程对象就“忘记”了这个卡密。
 解决：通过 self.card_key = ...，你把这个局部变量“提升”为了实例属性。</div>
